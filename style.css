@@ -14,7 +14,7 @@ body{
 }
 .card{
     padding: .25rem;
-/*     margin:  0 auto; */
+    margin: 0 auto;
 }
 .card .header{
     margin-bottom: .5rem;
@@ -22,3 +22,7 @@ body{
 .card .platform{
     margin-bottom: .6rem;
 }
+#card-img-top img{
+    height: 100%;
+}
+
