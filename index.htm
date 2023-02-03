@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/trophy.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar" style="background-color: #abc7da;">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-size: 30px; padding-top:0px; padding-bottom: 0px;">InfoCon</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" data-search>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      
+      <div class="bg-light p-5 rounded-lg m-3">
+        <h1 class="display-4">Programming Contests</h1>
+        <p class="lead">This is a simple website, where any person can get updates of upcoming Programming contests.</p>
+        <hr class="my-4">
+        <p>A single platform to manage different websites. Now its easier to get timings and all other imp information regarding the contests.</p>
+      </div>
+
+      <div class="usercard" userCardContainer></div>
+      <template data-user-template>
+        <!-- <div class="card" >
+          <div class="header" data-header></div>
+          <div class="platform" data-platform></div>
+        </div> -->
+        <div class="card" style="width: 19rem;">
+          <img src="" id="card-img-top" alt="?">
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text4">Website: </p>
+            <p class="card-text1">Starts at: </p>
+            <p class="card-text2">Ends at: </p>
+            <p class="card-text3">Status is: </p>
+            <p class="card-text5">In 24 hours: </p>
+            <a href="" class="btn btn-primary">Visit Website</a>
+          </div>
+        </div>
+      </template>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

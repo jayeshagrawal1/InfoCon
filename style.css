@@ -1,0 +1,23 @@
+
+body{
+    background-color: #c2d7e7;
+    overflow-x: hidden;
+}
+.hide{
+    display: none;
+}
+.usercard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin:1rem;
+    gap: .25rem;
+}
+.card{
+    padding: .25rem;
+}
+.card .header{
+    margin-bottom: .5rem;
+}
+.card .platform{
+    margin-bottom: .6rem;
+}
