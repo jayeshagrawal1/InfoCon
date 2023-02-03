@@ -14,7 +14,7 @@ body{
 }
 .card{
     padding: .25rem;
-    margin: auto;
+    margin:  0 auto;
 }
 .card .header{
     margin-bottom: .5rem;
