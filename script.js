@@ -20,7 +20,6 @@ response.then(res=> res.json()
         const title=card.querySelector(".card-title")
         const txt1=card.querySelector(".card-text1")
         const txt2=card.querySelector(".card-text2")
-        const txt3=card.querySelector(".card-text3")
         const txt4=card.querySelector(".card-text4")
         const txt5=card.querySelector(".card-text5")
 
@@ -28,10 +27,21 @@ response.then(res=> res.json()
         img.src=(user.url.includes("hackerearth"))?"he.png":(user.url.includes("leetcode"))?"lc.png":(user.url.includes("codeforces"))?"cf.jpg":(user.url.includes("codechef"))?"cc.jpg":(user.url.includes("hackerrank"))?"hr.png":"ac.jpg";
 
         let pf=(user.url.includes("hackerearth"))?"Hackerearth":(user.url.includes("leetcode"))?"Leetcode":(user.url.includes("codeforces"))?"Codeforces":(user.url.includes("codechef"))?"Codechef":(user.url.includes("hackerrank"))?"Hackerrank":"Atcoder";
+        // start time formatting
+        var date = user['start_time'].split('UTC')[0].split('T')[0];
+        var time = user.start_time.split('.')[0].split('T')[1];
+        if(user['start_time'].includes('UTC')) 
+            txt1.textContent+=date;      
+        else
+            txt1.textContent+=date+'  '+time;  
+        // end time formatting
+        var date = user['end_time'].split('UTC')[0].split('T')[0];
+        var time = user.end_time.split('.')[0].split('T')[1];
+        if(user['end_time'].includes('UTC')) 
+            txt2.textContent+=date;
+        else
+        txt2.textContent+=date+"  "+time;
 
-        txt1.textContent+=user.start_time;
-        txt2.textContent+=user.end_time;
-        txt3.textContent+=user.status;
         txt4.textContent+=pf;
         txt5.textContent+=user.in_24_hours;
         title.textContent=user.name;
