@@ -59,11 +59,17 @@ search.addEventListener('click',(e)=>{
     search.style.backgroundColor='#293b79';
     
 })
+search.addEventListener('touchstart',(e)=>{
+    e.preventDefault()
+    search.style.backgroundColor='#293b79';
+    
+})
 search.addEventListener('mouseout',(e)=>{
     e.preventDefault()
     search.style.backgroundColor='#314894';
     
 })
+
 search.addEventListener('touchend',(e)=>{
     e.preventDefault()
     search.style.backgroundColor='#314894';
