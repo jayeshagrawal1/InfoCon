@@ -24,9 +24,9 @@ response.then(res=> res.json()
         const txt5=card.querySelector(".card-text5")
 
         let img=card.querySelector("#card-img-top")
-        img.src=(user.url.includes("hackerearth"))?"he.png":(user.url.includes("leetcode"))?"lc.png":(user.url.includes("codeforces"))?"cf.jpg":(user.url.includes("codechef"))?"cc.jpg":(user.url.includes("hackerrank"))?"hr.png":"ac.jpg";
+        img.src=(user.url.includes("hackerearth"))?"he.png":(user.url.includes("leetcode"))?"lc.png":(user.url.includes("codeforces"))?"cf.jpg":(user.url.includes("codechef"))?"cc.jpg":(user.url.includes("hackerrank"))?"hr.png":(user.url.includes("google"))?"google.jpg":"ac.jpg";
 
-        let pf=(user.url.includes("hackerearth"))?"Hackerearth":(user.url.includes("leetcode"))?"Leetcode":(user.url.includes("codeforces"))?"Codeforces":(user.url.includes("codechef"))?"Codechef":(user.url.includes("hackerrank"))?"Hackerrank":"Atcoder";
+        let pf=(user.url.includes("hackerearth"))?"Hackerearth":(user.url.includes("leetcode"))?"Leetcode":(user.url.includes("codeforces"))?"Codeforces":(user.url.includes("codechef"))?"Codechef":(user.url.includes("hackerrank"))?"Hackerrank":(user.url.includes("hackerrank"))?"Google":"Atcoder";
         // start time formatting
         var date = user['start_time'].split('UTC')[0].split('T')[0];
         var time = user.start_time.split('.')[0].split('T')[1];
