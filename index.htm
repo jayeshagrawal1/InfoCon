@@ -10,12 +10,12 @@
     <link rel="shortcut icon" href="/trophy.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar" style="background-color: #386895;">
+    <nav class="navbar" id="top" style="background-color: #386895;">
         <div class="container-fluid">
           <a class="navbar-brand" style="font-size: 30px; padding-top:0px; padding-bottom: 0px;">
             <div class="heading">
               <img src="/info1.png">
-              <span class="role">nfocon</span>
+              <span class="role"></span>
             </div>
           </a>
           <form class="d-flex" role="search">
@@ -34,10 +34,6 @@
 
       <div class="usercard" userCardContainer></div>
       <template data-user-template>
-        <!-- <div class="card" >
-          <div class="header" data-header></div>
-          <div class="platform" data-platform></div>
-        </div> -->
         <div class="card" style="width: 19rem;">
           <img src="" id="card-img-top" alt="?">
           <div class="card-body">
@@ -51,19 +47,27 @@
           </div>
         </div>
       </template>
+      <footer style="background-color: #386895; font-weight: 500; height:80px; color: white; display:flex; flex-direction: column; align-items: center;  justify-content: center;">
+    
+        <div> <a href="#top"><img src="/info1.png" alt="" width="30px"></a> </div>
+          <div style="margin-left: 8px;">Made with ❤️</div>
+      </footer>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="/script.js"></script>
-    <!-- <script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
       var typeData = new Typed(".role", {
         strings: [
-          "InfoCon",
+          "nfocon",
+          
         ],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
-        backDelay: 1000,
+        backDelay: 500,
       });
-    </script> -->
+    </script>
 </body>
 </html>
