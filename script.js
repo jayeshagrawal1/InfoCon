@@ -40,44 +40,10 @@ function renderContestDetails(data){
         const txt4=card.querySelector(".card-text4");
         const txt5=card.querySelector(".card-text5");
 
-        let platform="";
-        let img=card.querySelector("#card-img-top");
-        if(user.url.includes("hackerearth"))
-        {
-            img.src="images/he.png";
-            platform='HackerEarth';
-        }
-        else if(user.url.includes("hackerrank"))
-        {
-            img.src="images/hr.png";
-            platform='HackerRank';
-        }
-        else if(user.url.includes("leetcode"))
-        {
-            img.src="images/lc.png";
-            platform='Leetcode';
-        }
-        else if(user.url.includes("codeforces"))
-        {
-            img.src="images/cf.jpg";
-            platform='CodeForces';
-        }
-        else if(user.url.includes("codechef"))
-        {
-            img.src="images/cc.jpg";
-            platform='CodeChef';
-        }
-        else if(user.url.includes("google"))
-        {
-            img.src="images/google.jpg";
-            platform='Google';
-        }
-        else
-        {
-            img.src="images/ac.jpg";
-            platform='AtCoder';
-        }
-        
+        let img=card.querySelector("#card-img-top")
+        img.src=(user.url.includes("hackerearth"))?"he.png":(user.url.includes("leetcode"))?"lc.png":(user.url.includes("codeforces"))?"cf.jpg":(user.url.includes("codechef"))?"cc.jpg":(user.url.includes("hackerrank"))?"hr.png":(user.url.includes("google"))?"google.jpg":"ac.jpg";
+
+        let pf=(user.url.includes("hackerearth"))?"Hackerearth":(user.url.includes("leetcode"))?"Leetcode":(user.url.includes("codeforces"))?"Codeforces":(user.url.includes("codechef"))?"Codechef":(user.url.includes("hackerrank"))?"Hackerrank":(user.url.includes("hackerrank"))?"Google":"Atcoder";
         // start time formatting
         var date = user['start_time'].split('UTC')[0].split('T')[0];
         var time = user.start_time.split('.')[0].split('T')[1];
