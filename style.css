@@ -80,3 +80,9 @@ body{
 .display-4{
     font-weight: 350;
 }
+.ErrorHandling{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
